@@ -66,10 +66,30 @@ article table td {
   vertical-align: middle;
 }
 
-tr.uniques td {
-  background-color: rgba(128, 255, 128, 0.3);
+tr.leaderships-damage td{
+  background-color: hsla(45, 35%, 50%, 0.9);
 }
-
+tr.leaderships-armor td {
+  background-color: hsla(60, 35%, 50%, 0.9);
+}
+tr.buffs-damage td {
+  background-color: hsla(170, 35%, 50%, 0.9);
+}
+tr.buffs-armor td {
+  background-color: hsla(180, 35%, 50%, 0.9);
+}
+tr.buffs-hightier td {
+  background-color: hsla(190, 35%, 50%, 0.9);
+}
+tr.buffs-specials td {
+  /* background-color: hsla(200, 35%, 50%, 0.9); */
+}
+tr.undebuffable-specials td {
+  /* background-color: hsla(200, 35%, 50%, 0.9); */
+}
+tr.debuffs td {
+  background-color: hsla(270, 35%, 50%, 0.9);
+}
 
 td img {
   height: 40px;
@@ -90,13 +110,6 @@ footer {
 	padding: 1em 0;
 	margin: 2m 0 0 0;
 	background-color: green;
-}
-
-tr:nth-child(even) {
-  background-color: rgba(150, 150, 150, 0.5);
-}
-tr:nth-child(odd) {
-  background-color: rgba(150, 170, 160, 0.5);
 }
 
 .type-header {
