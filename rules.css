@@ -41,6 +41,7 @@ nav a:hover {
 article table {
   border: 1px solid black;
   border-radius: 15px;
+  border-collapse: collapse;	/*eesta propiedad es solo para table */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   margin: 0 auto;
@@ -51,15 +52,26 @@ article table th {
   background-color: #444;
   color: #fff;
   padding: 10px;
-  border: 2px solid grey;
+  border: 2px solid black;
   text-transform: uppercase;
 }
 
 article table td {
   padding: 8px;
-  border: 1px solid grey;
+  border: 1px solid black;
   vertical-align: middle;
 }
+
+/* si quisiera hacer colores alternos: */
+
+/*
+article table tr:nth-child(even) {
+  background-color: hsl(160, 15%, 50%);
+}
+article table tr:nth-child(odd) {
+  background-color: hsl(160, 25%, 50%);
+}
+*/
 
 tr.leaderships-damage td {
   background-color: hsla(45, 35%, 50%, 0.9);
@@ -76,7 +88,7 @@ tr.buffs-armor td {
 tr.buffs-hightier td {
   background-color: hsla(190, 35%, 50%, 0.9);
 }
-/* Comentarios mantenidos como gu√≠a did√°ctica */
+/* Comentarios mantenidos como guÌa did·ctica */
 tr.buffs-specials td {
   /* background-color: hsla(200, 35%, 50%, 0.9); */
 }
