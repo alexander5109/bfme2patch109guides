@@ -1,168 +1,179 @@
-	/* --------------------------body------------------ */
-	html {
-		margin: 0;
-		padding: 0;
-		background-color: rgb(150, 170, 160);
-		text-align: center;
-		font-family: Monospace, fantasy, serif, Sans-serif, cursive;
-		/* font-size: 18px; */
-	}
+/* --------------------------body------------------ */
+html {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(150, 170, 160);
+	text-align: center;
+	font-family: Monospace, fantasy, serif, Sans-serif, cursive;
+	overflow-x: hidden; /* prevent overflow */
+	/* font-size: 18px; */
+}
 
-	/* --------------------------titlulo------------------ */
-	
-	
-	header h2 {
-		font-variant: small-caps;
-	}
-	
-	
-	
-	
-	/* --------------------------body------------------ */
-	/* body { */
-		/* margin: 0; */
-		/* padding: 0; */
-		/* background-color: rgb(150, 170, 160); */
-		/* text-align: center; */
-	/* } */
+/* --------------------------titlulo------------------ */
 
-	/* --------------------------NavBar------------------ */
-	nav {
-		display: flex;
-		justify-content: center;
-		background-color: #2e7d32;
-		padding: 0.5rem 1rem;
-		margin: 0;
-		/* font-size: 18px; */
-	}
 
-	nav ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		background-color: green;
-	}
+header h2 {
+	font-variant: small-caps;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* removes extra space below image */
+	justify-content: center;
+  margin: 1em auto;        /* this centers it horizontally */
+}
 
-	nav a {
-		text-decoration: none;
-		color: white;
-		font-weight: bold;
-		padding: 0.4rem 0.8rem;
-		border-radius: 4px;
-		transition: background-color 0.2s ease-in-out;
-	}
 
-	nav a:hover {
-		background-color: #1b5e20;
-	}
 
-	/* --------------------------article > table------------------ */
-	article table {
-		border: 1px solid black;
-		border-radius: 15px;
-		border-collapse: collapse;
-		/*eesta propiedad es solo para table */
-		/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-		/* font-size: 14px; */
-		margin: 0 auto;
-		overflow: hidden;
-	}
+/* --------------------------body------------------ */
+/* body { */
+	/* margin: 0; */
+	/* padding: 0; */
+	/* background-color: rgb(150, 170, 160); */
+	/* text-align: center; */
+/* } */
 
-	article table th {
-		background-color: #444;
-		color: #fff;
-		padding: 10px;
-		border: 2px solid black;
-		text-transform: uppercase;
-	}
+/* --------------------------NavBar------------------ */
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #2e7d32;
+	padding: 0.5rem 1rem;
+}
 
-	article table td {
-		padding: 8px;
-		border: 1px solid black;
-		vertical-align: middle;
-	}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 75%; /* Take full width of nav */
+}
 
-	/* si quisiera hacer colores alternos: */
+nav li {
+	flex: 1; /* Each item gets equal width */
+	text-align: center; /* Center link text inside */
+}
 
-	/*
-	article table tr:nth-child(even) {
-	  background-color: hsl(160, 15%, 50%);
-	}
-	article table tr:nth-child(odd) {
-	  background-color: hsl(160, 25%, 50%);
-	}
-	*/
+nav a {
+	display: block; /* Needed so padding takes full width */
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 0.4rem 0.8rem;
+	border-radius: 4px;
+	transition: background-color 0.2s ease-in-out;
+}
 
-	tr.leaderships-damage td {
-		background-color: hsla(45, 35%, 50%, 0.9);
-	}
+nav a:hover {
+	background-color: #1b5e20;
+}
 
-	tr.leaderships-armor td {
-		background-color: hsla(60, 35%, 50%, 0.9);
-	}
+/* --------------------------article > table------------------ */
+article table {
+	border: 1px solid black;
+	border-radius: 15px;
+	border-collapse: collapse;
+	/*eesta propiedad es solo para table */
+	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+	/* font-size: 14px; */
+	margin: 0 auto;
+	overflow: hidden;
+}
 
-	tr.buffs-damage td {
-		background-color: hsla(170, 35%, 50%, 0.9);
-	}
+article table th {
+	background-color: #444;
+	color: #fff;
+	padding: 10px;
+	border: 2px solid black;
+	text-transform: uppercase;
+}
 
-	tr.buffs-armor td {
-		background-color: hsla(180, 35%, 50%, 0.9);
-	}
+article table td {
+	padding: 8px;
+	border: 1px solid black;
+	vertical-align: middle;
+}
 
-	tr.buffs-hightier td {
-		background-color: hsla(190, 35%, 50%, 0.9);
-	}
+/* si quisiera hacer colores alternos: */
 
-	/* Comentarios mantenidos como gu�a did�ctica */
-	tr.buffs-specials td {
-		/* background-color: hsla(200, 35%, 50%, 0.9); */
-	}
+/*
+article table tr:nth-child(even) {
+  background-color: hsl(160, 15%, 50%);
+}
+article table tr:nth-child(odd) {
+  background-color: hsl(160, 25%, 50%);
+}
+*/
 
-	tr.undebuffable-specials td {
-		/* background-color: hsla(200, 35%, 50%, 0.9); */
-	}
+tr.leaderships-damage td {
+	background-color: hsla(45, 35%, 50%, 0.9);
+}
 
-	tr.debuffs td {
-		background-color: hsla(270, 35%, 50%, 0.9);
-	}
+tr.leaderships-armor td {
+	background-color: hsla(60, 35%, 50%, 0.9);
+}
 
-	td img {
-		height: 40px;
-		object-fit: contain;
-		vertical-align: middle;
-	}
+tr.buffs-damage td {
+	background-color: hsla(170, 35%, 50%, 0.9);
+}
 
-	/* --------------------------article > ol------------------ */
-	.notes {
-		/* font-size: 13px; */
-		line-height: 1.4;
-		/* margin-top: 20px; */
-		/* padding-left: 25px; */
-	}
+tr.buffs-armor td {
+	background-color: hsla(180, 35%, 50%, 0.9);
+}
 
-	.notes ol {
-		/* list-style-type: upper-alpha; */
-		list-style-position: inside;
-		/* list-style-image: url("isengard\\Isengard Faction.jpg"); */
-		/* list-style: none; */
-		/* margin: 0; */
-		/* padding: 0; */
-	}
+tr.buffs-hightier td {
+	background-color: hsla(190, 35%, 50%, 0.9);
+}
 
-	.notes img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+/* Comentarios mantenidos como gu�a did�ctica */
+tr.buffs-specials td {
+	/* background-color: hsla(200, 35%, 50%, 0.9); */
+}
 
-	.notes li {
-		/* margin-bottom: 6px; */
-	}
+tr.undebuffable-specials td {
+	/* background-color: hsla(200, 35%, 50%, 0.9); */
+}
 
-	/* --------------------------footer------------------ */
-	footer {
-		/* padding: 1em 0; */
-		/* margin-top: 2em; */
-		background-color: green;
-	}
+tr.debuffs td {
+	background-color: hsla(270, 35%, 50%, 0.9);
+}
+
+td img {
+	height: 40px;
+	object-fit: contain;
+	vertical-align: middle;
+}
+
+/* --------------------------article > ol------------------ */
+.notes {
+	/* font-size: 13px; */
+	line-height: 1.4;
+	/* margin-top: 20px; */
+	/* padding-left: 25px; */
+}
+
+.notes ol {
+	/* list-style-type: upper-alpha; */
+	list-style-position: inside;
+	/* list-style-image: url("isengard\\Isengard Faction.jpg"); */
+	/* list-style: none; */
+	/* margin: 0; */
+	/* padding: 0; */
+}
+
+.notes img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notes li {
+	/* margin-bottom: 6px; */
+}
+
+/* --------------------------footer------------------ */
+footer {
+	/* padding: 1em 0; */
+	/* margin-top: 2em; */
+	background-color: green;
+}
