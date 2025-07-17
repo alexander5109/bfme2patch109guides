@@ -34,40 +34,55 @@ header img {
 /* } */
 
 /* --------------------------NavBar------------------ */
+/* Navbar background */
 nav {
 	display: flex;
 	justify-content: center;
-	background-color: #2e7d32;
+	background-color: hsl(110, 50%, 15%); /* darker and distinct */
 	padding: 0.5rem 1rem;
+	margin: 0;
 }
 
+/* List layout */
 nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	width: 75%; /* Take full width of nav */
+	width: 75%;
 }
 
 nav li {
-	flex: 1; /* Each item gets equal width */
-	text-align: center; /* Center link text inside */
+	flex: 1;
+	text-align: center;
 }
 
+/* Base link style */
 nav a {
-	display: block; /* Needed so padding takes full width */
+	display: block;
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 	padding: 0.4rem 0.8rem;
 	border-radius: 4px;
+	background-color: hsl(110, 50%, 25%);
 	transition: background-color 0.2s ease-in-out;
 }
 
+/* Hover (not current) */
 nav a:hover {
-	background-color: #1b5e20;
+	background-color: hsl(110, 50%, 32%);
 }
 
+/* Current page */
+nav a.current {
+	background-color: hsl(110, 50%, 40%);
+}
+
+/* Hovering over current */
+nav a.current:hover {
+	background-color: hsl(110, 50%, 45%);
+}
 /* --------------------------article > table------------------ */
 article table {
 	border: 1px solid black;
